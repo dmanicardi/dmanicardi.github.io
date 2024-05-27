@@ -26,3 +26,18 @@ div.scrollmenu a:hover {
     background-color: rgb(168, 103, 181);
     color: rgb(0, 0, 0);
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: justify;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

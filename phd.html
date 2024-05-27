@@ -6,7 +6,17 @@
 
     <title>PhD thesis | D. Manicardi</title>
     
-    <meta http-equiv="refresh" content="0; URL=https://dmanicardi.github.io/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="utf-8">
+    <link rel=StyleSheet type="text/css" href="styles/skeleton.css"/>
+    <link rel=StyleSheet type="text/css" href="styles/generalstyle.css"/>
+
+    <link rel="icon" type="image/x-icon" href="img/xICONtransparent.ico">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </head>
 
@@ -15,6 +25,163 @@
 
     <noscript>Sorry, your browser does not support JavaScript!</noscript>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script src="fx/topfx.js"></script>
+
+    <div class="scrollmenu">
+
+        <a href="index.html" title="Home">Home</a>
+
+        <a href="index.html#about" title="About">About</a>
+
+        <a href="index.html#education" title="Education">Education</a>
+
+        <a href="index.html#interest" title="Research Interests">Research Interests</a>
+
+        <a href="index.html#teaching" title="Teaching Activities">Teaching Activities</a>
+
+        <a href="index.html#news" title="News">News</a>
+
+        <a href="index.html#publications" title="Publications">Publications</a>
+
+        <a href="index.html#hobbies" title="Hobbies">Hobbies</a>
+
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            
+            <div id="info" class="col-sm-4 p-3" style="background-color:pink;">
+
+                <div class="container-sm">    
+
+                    <br>
+
+                    <h2>
+                        Desiree <br> <b>MANICARDI</b>
+                    </h2>
+                    <div class="container-sm my-5">
+                        <img id="profilePic" src="img/dmanicardi.jpg" alt="D.Manicardi" loading="lazy">
+                    </div>
+                        
+                    <p>
+                        <b>PhD</b> in
+                        <i>Computer Science and Computational Mathematics</i> <!--(<u>in English</u>)-->
+                        at University of Insubria, Italy
+                    </p>
+
+                    <br>
+
+                    <p>
+                        <b>Languages</b>: 
+                        <br>
+                        <i class="importantText">Italian</i> (native), 
+                        <br> 
+                        <i class="importantText">English</i> (Upper Intermediate - CEFR B2: <i>First Certificate in English, FCE</i>).
+                    </p>
+
+                    <br>
+
+                    <b>
+                        <a href="doc/ManicardiCV20240527.pdf" target="_blank" title="Here my CV">
+                            Here my CV <br> (2024/05/27)
+                        </a>
+                    </b>
+
+                </div>  
+
+            </div>
+
+
+            <div id="main" class="col-sm-8 p-3">
+
+                <div class="container-sm"> 
+                    
+                    <div id="lastupdated">
+
+                        (last updated on 2024/05/27)
+
+                    </div>
+                    
+                    <div id="phd" class="container pt-5"> 
+
+                        <p>
+                            <strong class="nameTopic">Ph.D. thesis</strong>
+                        </p>
+                    
+                        <table>
+
+                            <tr>
+                                <td>
+                                    <b>Download</b>
+                                </td>
+                                <td>
+                                    <a href="doc/manicardi-PhDthesis.pdf" target="_blank" title="here">
+                                        here
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <b>Title</b>
+                                </td>
+                                <td>
+                                    <i><b>Formal Models for Biological Systems</b></i>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <b>Language</b>
+                                </td>
+                                <td>
+                                    English
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <b>Abstract</b>
+                                </td>
+                                <td>
+                                    In the last thirty years, formal models have been thoroughly employed in the realm of biological systems for many reasons: (i) preventing those ambiguities that may arise when informal notations are used for system description, (ii) supporting the development of simulators, (iii) supporting the development of tools, such as model checkers, allowing for verifying whether a system satisfies a given behavioural property, (iv) offering several instruments allowing for comparing the behaviour of different systems.
+                                    <br>
+                                    The work in this thesis can be divided into two contributions concerning formal models for biological systems.
+                                    <br>
+                                    The first contribution is related to the study of the robustness of biochemical networks. In particular, we take inspiration from the notion of &alpha;-robustness, which, intuitively, verifies how by varying the initial concentration of some species, called conventionally the input species, the concentration of other species of interest, called the output species, varies at steady state. Robustness in our sense captures random effects and temporary effects that are typical of the stochastic model.
+                                    <br>
+                                    We will employ: (i) the process calculi approach for specifying systems of interest, (ii) the semantic model of evolution sequences, which, intuitively, model the behaviour of a system as the sequence of probability measures over the attainable configurations, (iii) a formal notion of robustness, defined on the semantic model, and (iv) an algorithm allowing us to estimate the robustness of a system starting from its specification. 
+                                    <br>
+                                    We validate our approach on three case studies EnvZ/OmpR Osmoregulatory Signaling System in Escherichia Coli, which is an example of the regulatory network, the mechanism of Bacterial Chemotaxis of Escherichia Coli, and an abstract chemical reaction network, called Enzyme Activity at Saturation. We have provided a Python implementation available at <a href="https://github.com/dmanicardi/spebnr" target="_blank" title="github.com/dmanicardi/spebnr">github.com/dmanicardi/spebnr</a>.
+                                    <br>
+                                    Our second contribution is showing how the features of CospanSpan(Graph) can be exploited in modelling biological systems. CospanSpan(Graph) offers an algebraic approach for the compositional description of variable topology networks that has been only partially exploited so far for the formalisation of that kind of systems.
+                                    <br>
+                                    In particular, we provide a simplified model of a human heart and a model of a dual-chamber pacemaker that can interact with the model of the heart. Then, we model a gene regulatory network, namely the Lac Operon of Escherichia Coli.
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <b>Keywords</b>
+                                </td>
+                                <td>
+                                    <i>formal models</i>,
+                                    <i>biological systems</i>.
+                                </td>
+                            </tr>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
 </body>
 
 
