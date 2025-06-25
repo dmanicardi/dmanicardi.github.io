@@ -34,6 +34,22 @@
         });
     </script>
 
+    <script defer>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('menu.html')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById('menu').innerHTML = data;
+                })
+                .catch(error => console.error('There was a problem with the fetch operation:', error));
+        });
+    </script>
+
 </head>
 
 
@@ -41,30 +57,12 @@
 
     <noscript>Sorry, your browser does not support JavaScript!</noscript>
 
+
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <script src="fx/topfx.js"></script>
 
-    <div class="scrollmenu">
 
-        <a href="" title="Home">Home</a>
-
-        <a href="#about" title="About">About</a>
-
-        <a href="#current" title="Current">Research</a><!--Current Position-->
-
-        <a href="#education" title="Education">Education</a>
-
-        <a href="#interest" title="Research Interests">Research Interests</a>
-
-        <a href="#teaching" title="Teaching Activities">Teaching Activities</a>
-
-        <a href="#news" title="News">News</a>
-
-        <a href="#publications" title="Publications">Publications</a>
-
-        <a href="#hobbies" title="Hobbies">Hobbies</a>
-
-    </div>
+    <div id="menu" class="scrollmenu"></div>
 
 
     <div class="container-fluid">
